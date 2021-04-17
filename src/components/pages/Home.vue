@@ -10,7 +10,7 @@
         <em v-on:click="copy" class="fa fa-clipboard"></em>
       </div>
       <div class="below-command">
-        <span v-on:click="toggleDev">{{ showDevCommand ? 'stable' : 'master' }}</span>
+        <span v-on:click="toggleDev">{{ showDevCommand ? 'stable' : 'main' }}</span>
         <span v-on:click="toggleYarn">{{ yarn ? 'npm' : 'yarn' }}</span>
       </div>
       <br>

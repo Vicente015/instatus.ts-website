@@ -5,7 +5,7 @@ const branchBlacklist = new Set(['docs']);
 export default new DocsSource({
   id: 'main',
   name: 'Main library',
-  global: 'instatus.ts',
+  global: 'Instatus',
   repo: 'Vicente015/instatus.ts',
   defaultTag: 'main',
   branchFilter: branch =>
