@@ -32,7 +32,7 @@ export default {
   @include prefix(animation, logoZoomIn ease 1s);
 
   .text {
-    fill: #fc2929;
+    fill: #00E7C0;
     transform-origin: initial;
   }
 
@@ -72,13 +72,13 @@ export default {
 
 @include keyframes(logoKonami) {
   from {
-    @include prefix(filter, drop-shadow(0 0 5px #fc2929) hue-rotate(0deg));
+    @include prefix(filter, drop-shadow(0 0 5px #00E7C0) hue-rotate(0deg));
   }
   50% {
-    @include prefix(filter, drop-shadow(0 0 5px #fc2929) hue-rotate(180deg));
+    @include prefix(filter, drop-shadow(0 0 5px #00E7C0) hue-rotate(180deg));
   }
   to {
-    @include prefix(filter, drop-shadow(0 0 5px #fc2929) hue-rotate(360deg));
+    @include prefix(filter, drop-shadow(0 0 5px #00E7C0) hue-rotate(360deg));
   }
 }
 </style>

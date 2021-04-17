@@ -7,8 +7,8 @@ export default new DocsSource({
   name: 'Main library',
   global: 'instatus.ts',
   repo: 'Vicente015/instatus.ts',
-  defaultTag: 'latest',
+  defaultTag: 'main',
   branchFilter: branch =>
     !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
-  tagFilter: tag => tag === 'latest' || semver.gt(tag.replace(/^v/, ''), '1.0.0'),
+  tagFilter: tag => tag === 'main' || semver.gt(tag.replace(/^v/, ''), '1.0.0'),
 });

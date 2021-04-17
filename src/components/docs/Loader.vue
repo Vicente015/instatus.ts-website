@@ -86,10 +86,7 @@ export default {
           Record: 'https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype',
 
           // 3rd party
-          FastifyInstance: 'https://www.fastify.io/docs/latest/Server/',
-          Fastify: 'https://www.fastify.io',
-          Application: 'http://expressjs.com/en/4x/api.html#app',
-          TypedEventEmitter: 'https://nodejs.org/dist/latest/docs/api/events.html#events_class_eventemitter',
+          AxiosResponse: 'https://axios-http.com/docs/res_schema/',
         };
 
         // Add links for everything
