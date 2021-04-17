@@ -1,8 +1,8 @@
 {
-  "name": "slash-create-website",
+  "name": "instatus.ts-website",
   "version": "2.3.0",
   "private": true,
-  "description": "The website housing documentation for /create",
+  "description": "The website housing documentation for instatus.ts",
   "author": "Federico Grandi <fgrandi30@gmail.com>",
   "scripts": {
     "build": "vue-cli-service build",
@@ -36,6 +36,7 @@
   },
   "contributors": [
     "Schuyler Cebulskie <Gawdl3y@gawdl3y.com>",
-    "Snazzah <suggesttosnazzy@gmail.com>"
+    "Snazzah <suggesttosnazzy@gmail.com>",
+    "Vicente <me@vicente015.dev>"
   ]
 }

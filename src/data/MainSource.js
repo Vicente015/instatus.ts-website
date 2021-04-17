@@ -5,8 +5,8 @@ const branchBlacklist = new Set(['docs']);
 export default new DocsSource({
   id: 'main',
   name: 'Main library',
-  global: 'SlashCreate',
-  repo: 'Snazzah/slash-create',
+  global: 'instatus.ts',
+  repo: 'Vicente015/instatus.ts',
   defaultTag: 'latest',
   branchFilter: branch =>
     !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),

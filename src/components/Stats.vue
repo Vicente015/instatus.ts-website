@@ -4,11 +4,11 @@
       <h3>{{ downloads }}</h3>
       <span>Downloads</span>
     </div>
-    <a href="https://github.com/Snazzah/slash-create/stargazers" class="stat-card">
+    <a href="https://github.com/Vicente015/instatus.ts/stargazers" class="stat-card">
       <h3>{{ stars }}</h3>
       <span>Stars</span>
     </a>
-    <a href="https://github.com/Snazzah/slash-create/network/members" class="stat-card">
+    <a href="https://github.com/Vicente015/instatus.ts/network/members" class="stat-card">
       <h3>{{ forks }}</h3>
       <span>Forks</span>
     </a>
@@ -53,9 +53,9 @@ export default {
         github,
       ] = await Promise.all([
         fetch(
-          'https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/slash-create',
+          'https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/instatus.ts',
         ).then(json, noop),
-        fetch('https://api.github.com/repos/Snazzah/slash-create').then(
+        fetch('https://api.github.com/repos/Vicente015/instatus.ts').then(
           json,
           noop,
         ),

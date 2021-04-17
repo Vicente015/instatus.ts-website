@@ -31,7 +31,7 @@ export default {
         // Replace $$$ref with the branch/tag
         .replace(/\$\$\$ref/g, this.$route.params.tag)
         // Replace long url with short ref
-        .replace(/https:\/\/slash-create\.js\.org\/#([\w/]+)/, '#$1');
+        .replace(/https:\/\/instatus\.vicente015\.dev\/#([\w/]+)/, '#$1');
 
       let content;
       if (this.file.type === 'md') content = convertMarkdown(this.file.content);

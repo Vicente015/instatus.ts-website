@@ -1,7 +1,7 @@
 <template>
   <header>
     <container>
-      <router-link to="/">/create</router-link>
+      <router-link to="/">instatus.ts</router-link>
 
       <nav>
         <router-link to="/docs">Documentation</router-link>

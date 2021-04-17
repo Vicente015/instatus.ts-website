@@ -1,4 +1,4 @@
-const GITHUB_ORG = 'https://raw.githubusercontent.com/Snazzah/';
+const GITHUB_ORG = 'https://raw.githubusercontent.com/Vicente015/';
 
 self.addEventListener('fetch', event => {
   const req = event.request;

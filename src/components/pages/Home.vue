@@ -6,7 +6,7 @@
       <br>
       <br>
       <div class="cli-command">
-        <code>{{ yarn ? 'yarn add' : 'npm i' }} {{ showDevCommand ? (yarn ? `ssh://github.com/${repo}#master` : `${repo}#master`) : 'slash-create' }}</code>
+        <code>{{ yarn ? 'yarn add' : 'npm i' }} {{ showDevCommand ? (yarn ? `ssh://github.com/${repo}#main` : `${repo}#main`) : 'instatus.ts' }}</code>
         <em v-on:click="copy" class="fa fa-clipboard"></em>
       </div>
       <div class="below-command">
@@ -19,36 +19,46 @@
     <section id="info">
       <div class="info-item">
         <h2>About</h2>
-        <p>/create is a <a href="https://nodejs.org">Node.JS</a> module that handles Discord's <a href="https://discord.com/developers/docs/interactions/slash-commands">slash commands</a> similar to Discord.JS <a href="https://github.com/discordjs/Commando">Commando</a>.</p>
-        <p>Create slash commands with ease with syncing capabilities to make sure Discord handles them correctly upon start-up.</p>
+        <p>Instatus.ts is a <a href="https://nodejs.org">Node.JS</a> library to interact with the <a href="https://instatus.com/help/api">Instatus API</a>.</p>
       </div>
 
       <div class="info-item">
         <h2>Example</h2>
-        <pre><code class="javascript" v-hljs>const { Creator } = require('slash-create');
-const path = require('path');
-const creator = new Creator({
-  applicationID: '12345678901234567',
-  publicKey: 'CLIENT_PUBLIC_KEY',
-  token: 'BOT_TOKEN_HERE',
-});
+        <pre><code class="javascript" v-hljs>const { InstatusClient } = require('instatus.ts')
+const client = new InstatusClient({
+  key: 'YOUR_API_KEY', // You can get it in https://instatus.com/app/developer
+  pageID: 'PAGE_ID' // You can get it with client.pages.get(), default to the first page
+})
 
-creator
-    // Registers all of your commands in the ./commands/ directory
-    .registerCommandsIn(path.join(__dirname, 'commands'))
-    // This will sync commands to Discord, it must be called after commands are loaded.
-    // This also returns itself for more chaining capabilities.
-    .syncCommands();</code></pre>
+// Get the components
+client.pages.components.getAll().then(components => {
+  // Find the website component
+  const webID = components.find(component => component.name === 'Website')
+
+  // Creates an incident that affects the website
+  client.pages.incidents.add({
+    name: 'Website down',
+    message: 'The website is down, we are investigating it',
+    components: [webID],
+    started: Date.now(),
+    status: 'INVESTIGATING',
+    notify: true,
+    statuses: [
+      {
+        id: webID,
+        status: 'PARTIALOUTAGE'
+      }
+    ]
+  })
+})</code></pre>
       </div>
 
       <div class="info-item">
         <h2>Features</h2>
         <p>
           <ul>
-            <li>Support for modules like <a href="https://expressjs.org">Express</a></li>
-            <li>Hook into an existing <a href="#/docs/main/stable/examples/discord-bot">Discord bot</a></li>
-            <li>Command syncing - Sync commands with your creator automatically.</li>
-            <li>Load commands from a folder</li>
+            <li>Written in TypeScript.</li>
+            <li>Object-oriented.</li>
           </ul>
         </p>
       </div>

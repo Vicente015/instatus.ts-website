@@ -11,10 +11,10 @@ export default class DocsSource {
     this.name = options.name;
     this.global = options.global;
     this.repo = options.repo;
-    this.defaultTag = options.defaultTag || 'master';
+    this.defaultTag = options.defaultTag || 'main';
     this.defaultFile = options.defaultFile || { category: 'general', id: 'welcome' };
     this.source = options.source || `https://github.com/${this.repo}/blob/`;
-    this.branchFilter = options.branchFilter || (branch => branch !== 'master');
+    this.branchFilter = options.branchFilter || (branch => branch !== 'main');
     this.tagFilter = options.tagFilter || (() => true);
     this.tags = null;
     this.recentTag = null;

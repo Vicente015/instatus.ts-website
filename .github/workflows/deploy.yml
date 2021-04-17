@@ -2,7 +2,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: git config --global user.email "suggesttosnazzy@gmail.com"
-      - run: git config --global user.name "Snazzah"
-      - run: git remote set-url origin https://Snazzah:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
+      - run: git config --global user.email "33096355+Vicente015@users.noreply.github.com"
+      - run: git config --global user.name "Vicente015"
+      - run: git remote set-url origin https://Vicente015:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
 
       - run: npm i
       - run: npm run deploy

@@ -1,10 +1,10 @@
-# /create website
+# instatus.ts Website
 
-> The website housing documentation for /create
+> The website housing documentation for instatus.ts
 
 ## Website source
 
-This website is forked from https://github.com/dbots-pkg/dbots-website which is forked from https://github.com/discordjs/website
+This website is forked from https://github.com/Snazzah/slash-create-website/ which is forked from https://github.com/dbots-pkg/dbots-website which is forked from https://github.com/discordjs/website
 
 ## Project setup
 ```

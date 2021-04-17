@@ -2,16 +2,16 @@
   <footer>
     <container>
       <strong>
-        <router-link to="/">/create</router-link>
+        <router-link to="/">instatus.ts</router-link>
       </strong>
-      <p>Creator and handler for Discord's slash commands</p>
-      <a class="icon-link" href="https://github.com/Snazzah/slash-create">
+      <p>Library to interact with the Instatus API</p>
+      <a class="icon-link" href="https://github.com/Vicente015/instatus.ts">
         <i class="fab fa-github"></i>
       </a>
-      <a class="icon-link" href="https://npmjs.org/package/slash-create">
+      <a class="icon-link" href="https://npmjs.org/package/instatus.ts">
         <i class="fab fa-npm"></i>
       </a>
-      <a class="icon-link" href="https://yarn.pm/slash-create">
+      <a class="icon-link" href="https://yarn.pm/instatus.ts">
         <i class="fab fa-yarn"></i>
       </a>
       <stats/>
