@@ -1,3 +1,5 @@
+![instatus.ts](https://socialify.git.ci/Vicente015/instatus.ts-website/image?language=1&logo=https%3A%2F%2Finstatus.vicente015.dev%2Fstatic%2Flogo.png&owner=1&pattern=Plus&theme=Light)
+
 # instatus.ts Website
 
 > The website housing documentation for instatus.ts
